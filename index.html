@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Casa da Sogra</title>
+</head>
+
+<body>
+    <div class="fundo2">
+        <div class="fundo">
+            <nav class="menu">
+                <h2 class="result">Receber em: <h3 class="MeuEndereco"></h3><br></h2>
+
+                <a href="Login.html ">
+                    <h3 class="login">LOGIN</h3>
+                </a>
+
+                <img class="logo" src="img/logo1.jpg" alt="">
+                <h1 align="center" class="mercham">Bebidas Geladas a preço de mercado na sua casa agora!</h1>
+                <input type="text" id="produto" class="endereco" placeholder="DIGITE SEU ENDEREÇO AQUI">
+                <button id="btn">INSERIR ENDEREÇO</button>
+
+                <script>
+                    var $lista = document.querySelector('.MeuEndereco');
+                    var $produto = document.querySelector('#produto');
+                    var $botao = document.querySelector('#btn');
+
+
+                    $botao.addEventListener('click', function () {
+
+
+                        var item = '<h3>' + $produto.value + '</h3>';
+                        $lista.innerHTML += item;
+                        $produto.value = ''; // para apagar os dados pesquisados no input
+                        // $produto.focus();  continua o cursor para no input
+
+                    })
+                </script>
+
+                <br>
+                <br>
+                <br>
+        </div>
+    </div>
+    </nav>
+
+
+
+    <h1 align="center" class="prodDest">Produtos Em Destaque</h1>
+
+
+    <div class="venda">
+        <a href="compra.html" class="clicavel1"><img class="produto" src="img/brahmagarrafa.jpg" alt=""> </a>
+        <a href="compra2.html" class="clicavel1"><img class="produto" src="img/skol.jpg" alt=""> </a>
+        <a href="compra3.html" class="clicavel1"><img class="produto" src="img/skolbeats.jpg" alt=""></a>
+        <a href="compra4.html" class="clicavel1"><img class="produto" src="img/brahma.jpg" alt=""></a>
+        <p class="textprod">Brahma Long Neck - 355 ml </p>
+        <p class="textprod"> Skol Pinsel Lata - 269 ml </p>
+        <p class="textprod"> Skol Beats Senses - 269 ml </p>
+        <p class="textprod"> Brahma Pinsen - 350 ml </p>
+
+    </div>
+
+    <h2 class="prodEner">Energéticos</h2>
+    <div class="venda2">
+        <div class="textEnerg">
+            <p class="textprod2">Monster Energy - 473 ml </p>
+            <p class="textprod2_1">Monster Energy Juice Mango - 473 ml </p>
+            <p class="textprod2_3">Reign Body Fuel Melon - 473 ml</p>
+        </div>
+        <a href="compramonster.html" class="clicavel2"> <img class="produto2" src="img/monster.jpg" alt=""> </a>
+        <a href="compramonstManga.html" class="clicavel2"> <img class="produto2" src="img/mostermanga.jpg" alt=""> </a>
+        <a href="compraenergReign.html" class="clicavel2"> <img class="produto2" src="img/energetico.jpg" alt=""> </a>
+
+        <a href="TodosEnerg.html" class="clicavel3"> <img src="img/sitecard.png" class="setacard" alt=""></a>
+
+        <p class="vertodos"> VER TODOS</p>
+
+        <div class="textEnerg">
+            <p class="textprod3">R$ 7,69 </p>
+            <p class="textprod3_1">R$ 7,69</p>
+            <p class="textprod3_3"> R$ 8,00</p>
+        </div>
+
+
+
+
+
+    </div>
+    <h2 class="prodEner">Whisky's</h2>
+    <div class="venda2">
+        <div class="textEnerg">
+            <p class="textprod2">Jack Daniel's - 375ml</p>
+            <p class="textprod2_1">White Hourse - 1L </p>
+            <p class="textprod2_3"> Jack Daniel's Rye- 700 ml</p>
+        </div> <!--  buddR$ 5,49-->
+        <a href="compraJack.html" class="clicavel2"> <img class="produto2" src="img/jack.jpg" alt=""> </a>
+        <a href="compraWhite.html" class="clicavel2"> <img class="produto2" src="img/whitehourse.jpg" alt=""> </a>
+        <a href="compraJackRye.html" class="clicavel2"> <img class="produto2" src="img/JackRye.jpg" alt=""> </a>
+
+        <a href="TodosWhisky.html" class="clicavel3"> <img src="img/sitecard.png" class="setacard" alt=""></a>
+
+        <p class="vertodos"> VER TODOS</p>
+
+        <div class="textEnerg">
+            <p class="textprod3">R$ 75,00 </p>
+            <p class="textprod3_1">R$ 90,00 </p>
+            <p class="textprod3_3"> R$ 257,00</p>
+        </div>
+    </div>
+    <h2 class="prodEner">Cervejas</h2>
+    <div class="venda2">
+        <div class="textEnerg">
+            <p class="textprod2">Skol Pinsel Lata - 269 ml </p>
+            <p class="textprod2_1">Brahma Pinsen - 350 ml </p>
+            <p class="textprod2_3">Skol Beats Senses - 269 ml</p>
+        </div> <!--  buddR$ 5,49-->
+        <a href="compra2.html" class="clicavel2"> <img class="produto2" src="img/skol.jpg" alt=""> </a>
+        <a href="compra4.html" class="clicavel2"> <img class="produto2" src="img/brahma.jpg" alt=""> </a>
+        <a href="compra3.html" class="clicavel2"> <img class="produto2" src="img/skolbeats.jpg" alt=""> </a>
+
+        <a href="TodasCervejas.html" class="clicavel3"> <img src="img/sitecard.png" class="setacard" alt=""></a>
+
+        <p class="vertodos"> VER TODOS</p>
+
+        <div class="textEnerg">
+            <p class="textprod3">R$ 2,29 </p>
+            <p class="textprod3_1">R$ 2,50</p>
+            <p class="textprod3_3">R$ 4,49</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <nav class="menu2">
+
+
+        <img class="logo2" src="img/logo1.jpg" alt="">
+
+        <div class="redesociais">
+
+            <img class="ista" src="img/ista.png" alt="">
+            <img class="face" src="img/face.jpg" alt="">
+            <img class="twitter" src="img/twitter.png" alt="">
+
+        </div>
+    </nav>
+
+    <div id="modal-promocao" class="modal-container">
+        <div class="modal">
+            <h3 class="subtitulo">Você Tem Mais de 18 Anos? </h3><br><br>
+            <button class="fechar">SIM</button>
+            <a href="https://www.ambev.com.br/consumo-responsavel-aviso/"><button class="NAO">NÃO</button></a>
+        </div>
+
+    </div>
+
+    <script>
+        function iniciaModal(modalID) {
+            if (localStorage.fechaModal !== modalID) {
+                const modal = document.getElementById(modalID);
+                if (modal) {
+                    modal.classList.add('mostrar');
+                    modal.addEventListener('click', (e) => {
+                        if (e.target.className == 'fechar') {
+
+                            modal.classList.remove('mostrar');
+                            localStorage.fechaModal = modalID;
+                        }
+
+
+                    });
+
+                }
+            }
+        }
+        iniciaModal('modal-promocao');
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Login</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        body {
+            background: #f0f0f0;
+            background-image: url(img/fundodebar6.png);
+            background-repeat: no-repeat;
+            background-size: 100% 150%;
+
+        }
+
+        .form {
+            width: 400px;
+            margin: -40px auto;
+
+
+        }
+
+
+
+        .card {
+            box-shadow: 1px 1px 5px #ccc;
+            background-color: white;
+            padding-top: 40px;
+            padding: 30px;
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-family: 'Roboto', cursive;
+            font-size: x-large;
+
+        }
+
+
+        .card-gp>label {
+            width: 100%;
+            color: rgb(75, 75, 75);
+            display: block;
+            /* pula uma linha */
+            font-family: 'Roboto', cursive;
+
+        }
+
+        .card-gp>input {
+            border-radius: 5px;
+            outline: 0;
+            /*tira um negocio azul em volta*/
+            width: 100%;
+            height: 25px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: darkblue;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+
+        button {
+            margin-top: 10px;
+            border: 50px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 15px;
+            background: #f0e328;
+            font-family: 'Roboto', cursive;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .effect {
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+
+        .seta {
+            margin-top: 100px;
+            margin-left: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="seta">
+
+        <a href="index.html"><img src="img/seta2.png"> </a>
+    </div>
+    <section>
+
+
+        <form class="form" name="Cadastro" action="#" method="POST">
+            <div class="card">
+                <h3 align="center">LOGIN</h3><br>
+
+                <div class="card-gp">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Digite Seu Email" required><br>
+
+                    <label>Senha:</label>
+                    <input type="password" name="senha" placeholder="Digite Sua Senha" required><br><br>
+                    <label><input type="checkbox">Lembre-me</label>
+
+                    <a href="cadastrar.html"><button> ENTRAR </button></a>
+                    <!-- <input type="submit" name="Entrar" value="ENTRAR" class="botao"> -->
+                    <hr>
+                    <a href="cadastrar.html" class="effect">
+                        <h4>Cadastrar-se</h4>
+                    </a>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+
+
+
+</body>
+
+</html>
